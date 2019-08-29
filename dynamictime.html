@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<!--Video tutorial 27 Dynamic Clock-->
+
+	<button onclick="clearInterval(clock)"> Click Me!</button><br><br>
+	<p id="clockId"></p>
+	<script type="text/javascript">
+		
+		var clock = setInterval(anything,1000);
+		
+		function anything()
+		{
+			var d = new Date();
+			var thapa = d.toLocaleTimeString();
+
+			document.getElementById('clockId').innerHTML = thapa;
+		}
+	</script>
+</body>
+</html>
